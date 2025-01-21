@@ -1,0 +1,132 @@
+/* General Body Styles */
+body {
+    background: linear-gradient(to right, #007bff, #6c757d); /* Blue to gray gradient */
+    min-height: 100vh; /* Ensure it covers the full screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif; /* Use a modern sans-serif font */
+}
+.hidden {
+    display: none;
+    /* Use a class to hide elements */
+}
+
+/* Card Styles */
+.container {
+    background: #fff; /* White background for card */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 5px 22px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Title Styles */
+h1 {
+    color: #156ac6; /* Blue color for headings */
+}
+
+h3 {
+    color: #333; /* Dark color for subheadings */
+}
+
+/* Online Users List Styles */
+#online-users {
+    max-height: 300px; /* Max height for user list */
+    overflow-y: auto; /* Scrollable when content overflows */
+    border-radius: 5px; /* Rounded corners */
+    background: #f8f9fa; /* Light background for contrast */
+    padding: 15px; /* Padding for spacing */
+    margin-bottom: 15px; /* Spacing from chat box */
+}
+
+/* List Item Styles */
+
+  
+.dec-card {
+    border: 1px solid #183b5e; /* Border around chat box */
+    border-radius: 5px; /* Rounded corners */
+    background: #f8f9fa; /* Light background for chat box */
+    padding: 15px;
+     /* Padding for chat box */
+    height: 600px; /* Fixed height for chat box */
+    overflow-y: fixed; /* Scrollable when content overflows */
+    margin-bottom: 5px;
+    margin-top:1px; /* Spacing from form */
+    border:none;
+
+}
+.list-group-item {
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Center items vertically */
+    padding: 10px 15px; /* Padding for list items */
+    border: none; /* Remove border */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.list-group-item:hover {
+    background-color: #e2e6ea; /* Light gray on hover */
+}
+
+.active {
+    background-color: #007bff; /* Active item background */
+    color: white; /* Active item text color */
+}
+
+/* Online Status Dot */
+.online-status {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%; /* Circle shape */
+    display: inline-block;
+    margin-right: 8px; /* Space between dot and text */
+}
+
+/* Chat Box Styles */
+#chat-box {
+    border: 1px solid #dee2e6; /* Border around chat box */
+    border-radius: 5px; /* Rounded corners */
+    background: #f8f9fa; /* Light background for chat box */
+    padding: 15px; /* Padding for chat box */
+    height: 300px; /* Fixed height for chat box */
+    overflow-y: auto; /* Scrollable when content overflows */
+    margin-bottom: 15px; /* Spacing from form */
+}
+
+/* Chat Form Styles */
+#chat-form {
+    display: flex; /* Flexbox for form layout */
+}
+/* Custom CSS to remove borders */
+.no-border {
+    border: none !important; /* Remove any border */
+}
+
+#chat-message {
+    border-radius: 10px 0 0 5px; /* Rounded corners */
+    border: 1px solid #ced4da; /* Border color */
+}
+
+#chat-form button {
+    border-radius: 0 5px 5px 0; /* Rounded corners */
+}
+
+/* Room Creation Section Styles */
+#room-section {
+    margin-top: 15px;
+    margin-bottom:10px; /* Spacing from other elements */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Full width on small screens */
+    }
+
+    #online-users {
+        max-height: 200px; /* Reduce height on small screens */
+    }
+
+    #chat-box {
+        height: 200px; /* Reduce height on small screens */
+    }
+}
